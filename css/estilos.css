@@ -5,92 +5,43 @@
 }
 body {
     font-family: 'Raleway', sans-serif;
-    background-color: #D9D9D9;
-}
-.grid {
-    display: grid; 
-    grid-template-columns: 1fr 1fr 1fr 1fr; 
-    grid-template-rows: 0.5fr 3.5fr 0.5fr; 
-    gap: 0px 0px; 
-    grid-template-areas: 
-      "header header header header"
-      "main main main main"
-      "footer footer footer footer"; 
+    background-color: #353535;
 }
 
 
 
 /*--------------------------- css header -------------------- */
-.header {
-    grid-area: header;
-}
-.header__div {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    height: 25vh;
-}
-.header__nav ul{
-    display: flex;
-    justify-content: flex-end;
-    list-style-type: none;
-    margin-right: 60px;
-}
-.header__nav ul li .header__enlace{
-    font-size: 20px;
-    text-decoration: none;
-    padding: 20px 10px; 
-    color: black;   
-}  
-.header__nav ul li .header__enlace:hover {
-    background-color: rgba(40, 75, 99, 0.9) ;
-    cursor: pointer;
-}
-.header__nav .header__submenu {
-    padding-top: 20px; 
-    position: absolute;
-    display: none;
-    z-index: 1;
-    line-height: 15px;
-    
-}  
-.header__submenu li {
-    display: block;
-    background-color: rgba(40, 75, 99, 0.9); 
-    padding: 10px;
-    text-align-last: justify;
-} 
-.header__nav ul li:hover .header__submenu{
-    display: block;
-} 
-.header__submenu li a {
-    background-color: none;
-    text-decoration: none;
-    color: black;
-}
 .header__img{
     display: inline-block;
     width: 100px;
     height: 100px; 
-    margin: 10px 60px;  
+    margin: 10px 0px;   
     border-radius: 85%;
+}
+.header__nav{
+    font-size: 1.3em;
+}
+.navbar-light .navbar-brand,
+.navbar-light .navbar-nav .nav-link{
+    color: white;
 }
 .header__div2 {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between; 
+} 
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl{
+    padding-left: 0rem;
+    padding-right: 0rem;
 }
 .header__imgen {
-    background-image: url("../Images/Panaderia.jpg");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    display: block;  
-    height: 100%;
+    height: 35em;
     width: 100%;
 }  
+.d-flex {
+    justify-content: space-around;
+}
 .header__h2{
     height: 400px;
     width: 500px;
@@ -103,40 +54,26 @@ body {
     line-height: 70px;
     font-weight: normal;
     padding: 100px 40px;
-}
-
+}   
+ 
 
 
 /* -----------------------  css main  -------------------- */
-.main {
-    grid-area: main;
-    background-color: #D9D9D9;
-}
 .main__h1 {
-    font-size: 40px;
-    font-style: normal;
-    font-weight: bold;
-    text-align-last:center;
-    position: relative;
-    padding: 50px;
-    background-color: #353535;
+    color: white;
+    padding: 1.5em 0em;
+} 
+.main__section1 {
+    align-items: flex-end;
 }
-.main__section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; 
-    padding: 75px 200px; 
+.main__section2 {
+    align-items: flex-start;
 }
 .main__div {
     display: flex;
     justify-content: center; 
     align-items: center;
     padding: 5px;
-}
-.main__img {
-    padding: 5px;
-    height: 210px;
-    width: 210px;
 } 
 .main__enlace {
     position: absolute;  
@@ -161,19 +98,18 @@ body {
         width: 180px;
         height: 65px;
     }
-}
+}   
 
 
 
 /*------------------------  css footer ---------------------*/
 .footer {
-    grid-area: footer;
+    margin: 1rem 0rem;
 }
 .footer__div {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #353535;
     height: 25vh;
     justify-content: center
 } 
@@ -190,6 +126,7 @@ body {
 }
 .footer__div p {
     font-size: 20px;
+    color: white;
 }
 .footer__ul li:hover {
     transform: scale(1.5);
@@ -197,55 +134,54 @@ body {
 .footer__ul li {
     transition-duration: 1s;
     transition-property: all;
-}
+} 
 
 
 
 /* ---------------------------css contacto------------------------- */
+.main__contacto{
+    background-color: #D9D9D9;
+}
+.main__h1--contacto{
+    color: black;
+    padding: 1.3em 0em;
+    margin-bottom: 0em;
+} 
 .main__form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 50px 0px;
+    padding-bottom: 50px;
 }
 .main__div--contacto {
-    display: flex;
-    flex-direction: column;
     justify-content: space-between;
-    width: 500px;
-}
-.input {
-    height: 50px;
-    background-color: #CCCCCC;
-    font-size: 15px;
-    margin-top: 7px;
-    padding-left: 5px;
-}
-.input:hover {
-    cursor: pointer;
-}
-.input--enviar {
-    width: 120px;
-    background-color: rgba(40, 75, 99, 0.7);
+    width: 40rem;
+} 
+.main__enviar {
+    background-color: white;
+    border-color: white;
+    color: black;
+    width: 40rem;
+    margin-top: 0.1rem;
 }
 
 
 
 
 /* ---------------------------css ubicacíon------------------------- */
-.main__section--ubicacion {
+/* .main__section--ubicacion {
     display: flex;
     flex-direction: column;
     align-items: stretch;
 }
 .main__inframe {
     height: 500px;
-} 
+}  */
 
 
 
 /*---------------------------- css productos --------------------------*/
-.main__section--productos {
+/* .main__section--productos {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -289,7 +225,6 @@ body {
     list-style: none;
     display: flex;
     flex-direction: row;
-    /* position: absolute; */
 }
 .main__ul--productos li {
     display: none; 
@@ -300,22 +235,22 @@ body {
 } 
 .main__section--productos:hover .main__ul--productos li {
     display: inline;
-}
+} */
 
 
 
 /*------------------------------- css nosotros -------------------------------*/
 
-.main__p {
+/* .main__p {
     font-size: 20px;
     margin: 50px 150px;
     text-align: justify;
-} 
+}  */
 
 
 
 /*------------------------------ MEDIA QUERIES -------------------------------*/
-@media (max-width: 768px){
+/* @media (max-width: 768px){
     .header__nav ul li .header__enlace {
         font-size: 15px;
     }
@@ -444,4 +379,4 @@ body {
           "main main main main"
           "footer footer footer footer"; 
       }
-}
+} */
