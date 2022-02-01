@@ -17,113 +17,126 @@
     <title>SEROSdistribuidora</title>
 </head>
 <body>
-    <div>
-        <header class="header">
-            <div class="header__div">
-                <img data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" class="header__img" src="../Images/favicon.jpg" alt="Logo Seros distribuidora"/>
-                <nav class="header__nav" >
-                    <ul>
-                        <li><a class="header__enlace" href="../index.html">INICIO</a></li>
-                        <li><a class="header__enlace" href="./informacion.html">NOSOTROS</a></li>
-                        <li><a class="header__enlace" href="./productos.html">PRODUCTOS</a>
-                            <ul class="header__submenu">
-                                <li><a href="file:///C:/Users/Jorge/Desktop/PROYECTO/pages/productos.html#azucar">Azúcar</a></li>
-                                <li><a href="file:///C:/Users/Jorge/Desktop/PROYECTO/pages/productos.html#chocolates">Chocolates</a></li>
-                                <li><a href="file:///C:/Users/Jorge/Desktop/PROYECTO/pages/productos.html#cremas">Cremas</a></li>
-                                <li><a href="file:///C:/Users/Jorge/Desktop/PROYECTO/pages/productos.html#esencias">Esencias</a></li>
-                                <li><a href="file:///C:/Users/Jorge/Desktop/PROYECTO/pages/productos.html#grasas">Grasas</a></li>
-                                <li><a href="file:///C:/Users/Jorge/Desktop/PROYECTO/pages/productos.html#margarinas&mantecas">Margarinas&Mantecas</a></li>
-                                <li><a href="file:///C:/Users/Jorge/Desktop/PROYECTO/pages/productos.html#mayonesas">Mayonesas</a></li>
-                                <li><a href="file:///C:/Users/Jorge/Desktop/PROYECTO/pages/productos.html#mermeladas&dulces">Mermeladas&Dulces</a></li>
-                                <li><a href="file:///C:/Users/Jorge/Desktop/PROYECTO/pages/productos.html#premezclas&panificados">Premezclas&Panificados</a></li>
-                                <li><a href="file:///C:/Users/Jorge/Desktop/PROYECTO/pages/productos.html#pasteleria&decoracion">Pasteleria&Decoracion</a></li>
-                                <li><a href="file:///C:/Users/Jorge/Desktop/PROYECTO/pages/productos.html#pulpas&jaleas">Pulpas&Jaleas</a></li>
-                                <li><a href="file:///C:/Users/Jorge/Desktop/PROYECTO/pages/productos.html#semillas&frutosSecos">Semillas&FrutosSecos</a></li>
-                            </ul>  
-                        </li>
-                        <li><a class="header__enlace" href="./contacto.html">CONTACTO</a></li>
-                        <li><a class="header__enlace" href="./ubicacion.html">UBICACIÓN</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-        <main class="main">
-            <section>
-                <h1 class="main__h1">PRODUCTOS</h1>
-            </section>
-            <section class="main__section--productos">
-                <div id="azucar" >
-                    <div class="main__div--productos">
-                        <img class="main__img--productos" src="../Images/Azucar.jpg" alt="Azúcar" />
-                        <button class="main__button">AZÚCAR</button>
-                    </div>
-                    <div>
-                        <ul class="main__ul--productos">
-                            <li><img class="main__imagen" src="" alt="Crema chantilly"><p>Crema chantilly LEDEVIT x 4.7 litros</p></li>
-                            <li><img class="main__imagen" src="" alt="Crema vainilla"><p>Crema vainilla LEDEVIT x 4.7 litros</p></li>
-                            <li><img class="main__imagen" src="" alt="Crema chocolate"><p>Crema chocolate LEDEVIT x 4.7 litros</p></li>
-                            <li><img class="main__imagen" src="" alt="Crema pastelera"><p>Crema pastelera LEDEVIT x 4 kg</p></li>
-                            <li><img class="main__imagen" src="" alt="Crema chantilly"><P>Crema chantilly DECOR UP x 1 litro</P></li>
-                            
+    <header class="header">
+        <div class="container-fluid d-flex flex-row bd-highligh">
+            <img data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" class="img-thumbnail header__img" src="../Images/favicon.jpg" alt="Logo Seros distribuidora"/>
+            <nav class="navbar navbar-expand-xl navbar-light header__nav d-flex justify-content-end bd-highlight mb-2">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="../index.html">INICIO</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarWithDropdown" aria-controls="navbarWithDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse show" id="navbarWithDropdown">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link" href="./informacion.html">NOSOTROS</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./contacto.html">CONTACTO</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./ubicacion.html">UBICACIÓN</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          PRODUCTOS
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <li><a class="dropdown-item" href="#">Azúcar</a></li>
+                          <li><a class="dropdown-item" href="#">Chocolates</a></li>
+                          <li><a class="dropdown-item" href="#">Cremas</a></li>
+                          <li><a class="dropdown-item" href="#">Esencias</a></li>
+                          <li><a class="dropdown-item" href="#">Grasas</a></li>
+                          <li><a class="dropdown-item" href="#">Margarinas&Mantecas</a></li>
+                          <li><a class="dropdown-item" href="#">Mayonesas</a></li>
+                          <li><a class="dropdown-item" href="#">Mermeladas&Dulces</a></li>
+                          <li><a class="dropdown-item" href="#">Panificados&Premezclas</a></li>
+                          <li><a class="dropdown-item" href="#">Pastelería&Decoración</a></li>
+                          <li><a class="dropdown-item" href="#">Pulpas&Jaleas</a></li>
+                          <li><a class="dropdown-item" href="#">Semillas&FrutosSecos</a></li>
                         </ul>
-                    </div>
-                </div>      
-                <div class="main__div--productos" id="chocolates" > 
-                    <img class="main__img--productos" src="../Images/Chocolate.jpg" alt="chocolate" />
-                    <button class="main__button">CHOCOLATES</button>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
-                <div class="main__div--productos" id="cremas">
-                    <img class="main__img--productos" src="../Images/Cremas.jpg" alt="Cremas" />
-                    <button class="main__button">CREMAS</button>
+              </nav>
+        </div>
+    </header>
+    <main class="main">
+        <section>
+            <h1 class="main__h1 h1 display-5 text-center">PRODUCTOS</h1>
+        </section>
+        <section class="main__section--productos">
+            <div id="azucar" >
+                <div class="main__div--productos">
+                    <img class="main__img--productos" src="../Images/Azucar.jpg" alt="Azúcar" />
+                    <button class="main__button">AZÚCAR</button>
                 </div>
-                <div class="main__div--productos" id="esencias">
-                    <img class="main__img--productos" src="../Images/Esencias.jpg" alt="Esencias" />
-                    <button class="main__button">ESENCIAS</button>
+                <div>
+                    <ul class="main__ul--productos">
+                        <li><img class="main__imagen" src="" alt="Crema chantilly"><p>Crema chantilly LEDEVIT x 4.7 litros</p></li>
+                        <li><img class="main__imagen" src="" alt="Crema vainilla"><p>Crema vainilla LEDEVIT x 4.7 litros</p></li>
+                        <li><img class="main__imagen" src="" alt="Crema chocolate"><p>Crema chocolate LEDEVIT x 4.7 litros</p></li>
+                        <li><img class="main__imagen" src="" alt="Crema pastelera"><p>Crema pastelera LEDEVIT x 4 kg</p></li>
+                        <li><img class="main__imagen" src="" alt="Crema chantilly"><P>Crema chantilly DECOR UP x 1 litro</P></li>
+                    </ul>
                 </div>
-                <div class="main__div--productos" id="grasas">
-                    <img class="main__img--productos" src="../Images/Grasas.jpg" alt="Grasas" />
-                    <button class="main__button">GRASAS</button>
-                </div>
-                <div class="main__div--productos" id="margarinas&mantecas">
-                    <img class="main__img--productos" src="../Images/Margarinas&Mantecas.jpg" alt="Margarinas & mantecas" />
-                    <button class="main__button">MARGARINAS</button>
-                </div>
-                <div class="main__div--productos2" id="mayonesas">
-                    <img class="main__img--productos" src="../Images/Mayonesa.jpg" alt="Mayonesas" />
-                    <button class="main__button">MAYONESAS</button>
-                </div>
-                <div class="main__div--productos2" id="mermeladas&dulces">
-                    <img class="main__img--productos" src="../Images/Mermeladas&Dulces.jpg" alt="Mermeladas & dulces" />
-                    <button class="main__button">MERMELADAS & DULCES</button>
-                </div>
-                <div class="main__div--productos2" id="panificados&premezclas">
-                    <img class="main__img--productos" src="../Images/Panificados&Premezclas.jpg" alt="Panificados & premezclas" />
-                    <button class="main__button">PANIFICADOS</button>
-                </div>
-                <div class="main__div--productos2" id="pasteleria&decoracion">
-                    <img class="main__img--productos" src="../Images/Pasteleria&Decoracion.jpg" alt="Pastelería & decoracíon" />
-                    <button class="main__button">PASTELERÍA</button>
-                </div>
-                <div class="main__div--productos2" id="pulpas&jaleas">
-                    <img class="main__img--productos" src="../Images/Pulpas&Jaleas.jpg" alt="Pulpas & jaleas" />
-                    <button class="main__button">PULPAS & JALEAS</button>
-                </div>
-                <div class="main__div--productos2" id="semillas&frutosSecos">
-                    <img class="main__img--productos" src="../Images/Semillas&FrutosSecos.jpg" alt="Semillas & frutos secos" />
-                    <button class="main__button">SEMILLAS & FRUTOS</button>
-                </div>
-            </section>
-        </main>
-        <footer class="footer">
-            <div class="footer__div">
-                <ul class="footer__ul">
-                    <li><i><a href="" class="fab fa-whatsapp"></a></i></li>
-                    <li><i><a href="https://www.facebook.com/SEROS-distribuidora-105852644797057" class="fab fa-facebook-f"></a></i></li>
-                </ul>
-                <p class="footer__parrafo">Copyright</p>
+            </div>      
+            <div class="main__div--productos" id="chocolates" > 
+                <img class="main__img--productos" src="../Images/Chocolate.jpg" alt="chocolate" />
+                <button class="main__button">CHOCOLATES</button>
             </div>
-        </footer>
-    </div>
+            <div class="main__div--productos" id="cremas">
+                <img class="main__img--productos" src="../Images/Cremas.jpg" alt="Cremas" />
+                <button class="main__button">CREMAS</button>
+            </div>
+            <div class="main__div--productos" id="esencias">
+                <img class="main__img--productos" src="../Images/Esencias.jpg" alt="Esencias" />
+                <button class="main__button">ESENCIAS</button>
+            </div>
+            <div class="main__div--productos" id="grasas">
+                <img class="main__img--productos" src="../Images/Grasas.jpg" alt="Grasas" />
+                <button class="main__button">GRASAS</button>
+            </div>
+            <div class="main__div--productos" id="margarinas&mantecas">
+                <img class="main__img--productos" src="../Images/Margarinas&Mantecas.jpg" alt="Margarinas & mantecas" />
+                <button class="main__button">MARGARINAS</button>
+            </div>
+            <div class="main__div--productos2" id="mayonesas">
+                <img class="main__img--productos" src="../Images/Mayonesa.jpg" alt="Mayonesas" />
+                <button class="main__button">MAYONESAS</button>
+            </div>
+            <div class="main__div--productos2" id="mermeladas&dulces">
+                <img class="main__img--productos" src="../Images/Mermeladas&Dulces.jpg" alt="Mermeladas & dulces" />
+                <button class="main__button">MERMELADAS & DULCES</button>
+            </div>
+            <div class="main__div--productos2" id="panificados&premezclas">
+                <img class="main__img--productos" src="../Images/Panificados&Premezclas.jpg" alt="Panificados & premezclas" />
+                <button class="main__button">PANIFICADOS</button>
+            </div>
+            <div class="main__div--productos2" id="pasteleria&decoracion">
+                <img class="main__img--productos" src="../Images/Pasteleria&Decoracion.jpg" alt="Pastelería & decoracíon" />
+                <button class="main__button">PASTELERÍA</button>
+            </div>
+            <div class="main__div--productos2" id="pulpas&jaleas">
+                <img class="main__img--productos" src="../Images/Pulpas&Jaleas.jpg" alt="Pulpas & jaleas" />
+                <button class="main__button">PULPAS & JALEAS</button>
+            </div>
+            <div class="main__div--productos2" id="semillas&frutosSecos">
+                <img class="main__img--productos" src="../Images/Semillas&FrutosSecos.jpg" alt="Semillas & frutos secos" />
+                <button class="main__button">SEMILLAS & FRUTOS</button>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container-fluid footer__div">
+            <ul class="d-flex flex-row bd-highlight footer__ul">
+                <li><i><a href="" class="fab fa-whatsapp"></a></i></li>
+                <li><i><a href="https://www.facebook.com/SEROS-distribuidora-105852644797057" class="fab fa-facebook-f"></a></i></li>
+            </ul>
+            <p class="footer__parrafo" >Copyright</p>  
+        </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
