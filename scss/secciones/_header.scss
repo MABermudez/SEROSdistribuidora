@@ -1,0 +1,35 @@
+.header {
+    background-color: $colorGris;
+
+    .header__div,
+    .d-flex {
+        justify-content: space-around;
+
+        .header__img {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            margin: 10px 0px;
+            border-radius: 85%;
+        }
+
+        .header__nav {
+            font-size: 1.3em;
+
+            .navbar-brand,
+            .nav-link {
+                color: $colorBlanco;
+            }
+
+            .nav-item {
+                .dropdown-menu {
+                    background-color: $colorGris;
+
+                    .dropdown-item {
+                        color: $colorBlanco;
+                    }
+                }
+            }
+        }
+    }
+}

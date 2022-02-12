@@ -1,0 +1,36 @@
+APLICACÍON DE SEO:
+
+-Modifique los títulos de todas las páginas. En donde antes decia "SEROSdistribuidora", ahora dice por ejemplo "CONTACTO | SEROSdistribuidora".
+
+-Agregue etiquetas meta keywords a todos los html.
+  index: "Seros, distribuidora, materias primas, panadería, pastelería, productos"
+  informacíon: "Seros, distribuidora, materias primas, horarios de atencíon, facturacíon, envíos"
+  contacto: "Seros, distribuidora, materias primas, contacto, mensaje, comentario"
+  ubicacíon: "Seros, distribuidora, materias primas, ubicación, capital federal, Argentina"
+  productos: "Seros, distribuidora, materias primas, productos, azúcar, chocolates, cremas, esencias, grasas"
+
+-Agregue description a todos los html.
+  index: "Distribuidora de materias primas para panaderías y pastelerías ubicada en capital federal, Argentina. Más de 40 años de trayectoria."
+  informacíon: "Distribuidora de materias primas para panadería y pastelería. Horarios de atencíon, formas de pago, tipos de facturacion, formas de envío."
+  contacto: "Distribuidora de materias primas para panadería y pastelería. Contactese con nosotros completando el formulario. Haganos su consulta."
+  ubicacíon: "Distribuidora de materias primas para panadería y pastelería. Ubicados en el barrio de Parque Patricios, Capital Federal, Argentina."
+  productos: "Distribuidora de materias primas para panadería y pastelería. Trabajamos con una amplia variedad de productos. Todo lo que necesitas esta acá."
+
+-Todas las imagenes tienen su texto descriptivo. 
+  En el index: 
+  -foto de fondo del header: "Foto de fondo, variedad de panes."
+  -fotos de los productos en el main:
+      - "Azúcar".
+      - "Chocolates".
+      - "Cremas".
+      - "Esencias".
+      - "Grasas".
+      - "Margarinas y mantecas".
+      - "Mayonesas".
+      - "Mermeladas y dulces".
+      - "Panificados y premezclas".
+      - "pastelería y decoracíon".
+      - "Pulpas y jaleas".
+      - "Semillas y frutos secos".
+      
+-Todos los html tienen un único h1.

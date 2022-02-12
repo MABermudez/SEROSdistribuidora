@@ -1,0 +1,35 @@
+.footer {
+    background-color: $colorGris;
+
+    .footer__div {
+        padding-top: 2rem;
+        padding-bottom: 1.5rem;
+
+        .footer__ul {
+            list-style-type: none;
+            justify-content: center;
+
+            li {
+                transition-duration: 0.7s;
+                transition-property: all;
+
+                .footer__icono {
+                    font-size: 2rem;
+                    text-decoration: none;
+                    color: $colorBlanco;
+                    padding-right: 1.2rem;
+                }
+
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
+        }
+
+        .footer__parrafo {
+            font-size: 1em;
+            color: $colorBlanco;
+            text-align-last: center;
+        }
+    }
+}

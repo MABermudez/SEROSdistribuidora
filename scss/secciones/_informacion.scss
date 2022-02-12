@@ -1,0 +1,28 @@
+.mainInformacion {
+    .main__section {
+        .main__h1 {
+            @extend %estilosTitulo;
+        }
+    }
+
+    .main__section--informacion {
+        .main__p {
+            font-size: 1rem;
+            text-align: justify;
+            margin-bottom: 0rem;
+            padding-bottom: 3rem;
+            .span1 {
+                @include estilosParrafos(rgba(53, 53, 53, 0.1));
+            }
+            .span2 {
+                @include estilosParrafos (rgba(53, 53, 53, 0.3));
+            }
+            .span3 {
+                @include estilosParrafos (rgba(53, 53, 53, 0.6));
+            }
+            .span4 {
+                @include estilosParrafos (rgba(53, 53, 53, 0.9));
+            }
+        }
+    }
+}

@@ -1,11 +1,21 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     font-family: 'Raleway', sans-serif;
 }
 
+// variables
+@import './variables';
+
 // importaciones
-@import './secciones/index'
+@import './secciones/header';
+@import './secciones/index';
+@import './secciones/informacion';
+@import './secciones/contacto';
+@import './secciones/productos';
+@import './secciones/ubicacion';
+@import './secciones/footer';
