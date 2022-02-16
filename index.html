@@ -6,14 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="keywords" content="Seros, distribuidora, materias primas, panadería, pastelería, productos">
-    <meta name="description" content="Distribuidora de materias primas para panaderías y pastelerías ubicada en capital federal, Argentina. Más de 40 años de trayectoria.">
+    <meta name="description"
+        content="Distribuidora de materias primas para panaderías y pastelerías ubicada en capital federal, Argentina. Más de 40 años de trayectoria.">
     <!-- fuentes externas -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
     <!-- favicon -->
     <link rel="shortcut icon" href="./Images/favicon.jpg" />
-    <script src="https://kit.fontawesome.com/8033048fdb.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/885ebc020d.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css" />
@@ -23,140 +24,191 @@
 
 <body>
     <header class="header">
-        <div class="container-fluid d-flex flex-row bd-highligh header__div">
-            <img data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
-                class="img-thumbnail header__img" src="./Images/favicon.jpg" alt="Logo Seros distribuidora" />
-            <nav class="navbar navbar-expand-xl navbar-light d-flex bd-highlight mb-2 header__nav">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="./index.html">SEROS distribuidora</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarWithDropdown" aria-controls="navbarWithDropdown" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse show" id="navbarWithDropdown">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link" href="./pages/informacion.html">NOSOTROS</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./pages/contacto.html">CONTACTO</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./pages/ubicacion.html">UBICACIÓN</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="./pages/productos.html#productos"
-                                    id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    PRODUCTOS
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <li><a class="dropdown-item" href="./pages/productos.html#azucar">Azúcar</a></li>
-                                    <li><a class="dropdown-item" href="#">Chocolates</a></li>
-                                    <li><a class="dropdown-item" href="#">Cremas</a></li>
-                                    <li><a class="dropdown-item" href="#">Esencias</a></li>
-                                    <li><a class="dropdown-item" href="#">Grasas</a></li>
-                                    <li><a class="dropdown-item" href="#">Margarinas & Mantecas</a></li>
-                                    <li><a class="dropdown-item" href="#">Mayonesas</a></li>
-                                    <li><a class="dropdown-item" href="#">Mermeladas & Dulces</a></li>
-                                    <li><a class="dropdown-item" href="#">Panificados & Premezclas</a></li>
-                                    <li><a class="dropdown-item" href="#">Pastelería & Decoración</a></li>
-                                    <li><a class="dropdown-item" href="#">Pulpas & Jaleas</a></li>
-                                    <li><a class="dropdown-item" href="#">Semillas & FrutosSecos</a></li>
-                                </ul>
-                            </li>
-                        </ul>
+        <div class="d-flex flex-row bd-highligh header__div">
+            <div class="container-fluid header__container--img">
+                <img class="header__img" src="./Images/favicon.jpg" alt="Logo Seros distribuidora" />
+            </div>
+            <div class="container-fluid header__container--nav">
+                <nav class="navbar navbar-expand-xl navbar-light d-flex bd-highlight mb-2 header__nav">
+                    <div class="container-fluid header__container--div">
+                        <a class="navbar-brand" href="./index.html">SEROS distribuidora</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarWithDropdown" aria-controls="navbarWithDropdown"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="container-fluid collapse navbar-collapse show navbar__div" id="navbarWithDropdown">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./pages/informacion.html">NOSOTROS</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./pages/contacto.html">CONTACTO</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./pages/ubicacion.html">UBICACIÓN</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="./pages/productos.html#productos"
+                                        id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        PRODUCTOS
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                        <li><a class="dropdown-item" href="./pages/productos.html#azucar">Azúcar</a></li>
+                                        <li><a class="dropdown-item" href="./pages/productos.html#chocolates">Chocolates</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="./pages/productos.html#cremas">Cremas</a></li>
+                                        <li><a class="dropdown-item" href="./pages/productos.html#esencias">Esencias</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="./pages/productos.html#grasas">Grasas</a></li>
+                                        <li><a class="dropdown-item" href="./pages/productos.html#margarinas">Margarinas &
+                                                Mantecas</a></li>
+                                        <li><a class="dropdown-item" href="./pages/productos.html#mayonesas">Mayonesas</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="./pages/productos.html#mermeladas">Mermeladas &
+                                                Dulces</a></li>
+                                        <li><a class="dropdown-item" href="./pages/productos.html#panificados">Panificados &
+                                                Premezclas</a></li>
+                                        <li><a class="dropdown-item" href="./pages/productos.html#pasteleria">Pastelería &
+                                                Decoración</a></li>
+                                        <li><a class="dropdown-item" href="./pages/productos.html#pulpas">Pulpas & Jaleas</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="./pages/productos.html#semillas">Semillas &
+                                                FrutosSecos</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-            </nav>
+                </nav>
+            </div>
         </div>
-        <div class="container-fluid header__div2">
+        <div class="header__div2 container-fluid">
             <img class="header__imgen" src="./Images/Panaderia.jpg" alt="Foto de fondo, variedad de panes.">
             <h2 class="header__h2">DISTRIBUIDORA DE MATERIAS PRIMAS</h2>
         </div>
     </header>
     <main class="mainIndex">
-        <div class="container-fluid">
+        <div class="container-fluid main__contenedor">
             <section class="main__section">
                 <div>
                     <h1 class="main__h1 h1 display-5 text-center">NUESTROS PRODUCTOS</h1>
                 </div>
             </section>
             <section class="row main__section1">
-                <div class="col-4 col-md-3 d-flex flex-column bd-highlight main__section2">
+                <div class="col-4 col-md-3 d-flex flex-column bd-highlight main__section2 main__columnas">
                     <div class="main__div container">
-                        <img class="main__img" src="./Images/Azucar.jpg" alt="Azúcar" />
-                        <a class="main__enlace"
-                            href="file:///C:/Users/Jorge/Desktop/PROYECTO/pages/productos.html#azucar">AZÚCAR</a>
+                        <div>
+                            <img class="main__img" src="./Images/Azucar.jpg" alt="Azúcar" />
+                        </div>
+                        <div class="btn-group">
+                            <a href="./pages/productos.html#azucar" class="btn btn-primary main__boton">AZÚCAR</a>
+                        </div>
                     </div>
                     <div class="main__div container">
-                        <img class="main__img" src="./Images/Grasas.jpg" alt="Grasas" />
-                        <a class="main__enlace"
-                            href="file:///C:/Users/Jorge/Desktop/PROYECTO/pages/productos.html#grasas">GRASAS</a>
+                        <div>
+                            <img class="main__img" src="./Images/Grasas.jpg" alt="Grasas" />
+                        </div>
+                        <div class="btn-group">
+                            <a href="./pages/productos.html#grasas" class="btn btn-primary main__boton">GRASAS</a>
+                        </div>
                     </div>
                     <div class="main__div margin container">
-                        <img class="main__img" src="./Images/Panificados&Premezclas.jpg"
-                            alt="Panificados & premezclas" />
-                        <a class="main__enlace"
-                            href="file:///C:/Users/Jorge/Desktop/PROYECTO/pages/productos.html#panificados&premezclas">PANIFICADOS
-                            & PREMEZCLAS</a>
+                        <div>
+                            <img class="main__img" src="./Images/Panificados&Premezclas.jpg"
+                                alt="Panificados & premezclas" />
+                        </div>
+                        <div class="btn-group">
+                            <a href="./pages/productos.html#panificados" class="btn btn-primary main__boton">PANIFICADOS
+                                & PREMEZCLAS</a>
+                        </div>
                     </div>
                 </div>
-                <div class="col-2 col-md-3">
+                <div class="col-2 col-md-3 main__columnas">
                     <div class="main__div container">
-                        <img class="main__img" src="./Images/Chocolate.jpg" alt="chocolate" />
-                        <a class="main__enlace"
-                            href="file:///C:/Users/Jorge/Desktop/PROYECTO/pages/productos.html#chocolates">CHOCOLATES</a>
+                        <div>
+                            <img class="main__img" src="./Images/Chocolate.jpg" alt="chocolate" />
+                        </div>
+                        <div class="btn-group">
+                            <a href="./pages/productos.html#chocolates"
+                                class="btn btn-primary main__boton">CHOCOLATES</a>
+                        </div>
                     </div>
                     <div class="main__div container">
-                        <img class="main__img" src="./Images/Margarinas&Mantecas.jpg" alt="Margarinas & mantecas" />
-                        <a class="main__enlace"
-                            href="file:///C:/Users/Jorge/Desktop/PROYECTO/pages/productos.html#margarinas&mantecas">MARGARINAS
-                            & MANTECAS</a>
+                        <div>
+                            <img class="main__img" src="./Images/Margarinas&Mantecas.jpg" alt="Margarinas & mantecas" />
+                        </div>
+                        <div class="btn-group">
+                            <a href="./pages/productos.html#margarinas" class="btn btn-primary main__boton">MARGARINAS &
+                                MANTECAS</a>
+                        </div>
                     </div>
                     <div class="main__div margin container">
-                        <img class="main__img" src="./Images/Pasteleria&Decoracion.jpg" alt="Pastelería & decoracíon" />
-                        <a class="main__enlace"
-                            href="file:///C:/Users/Jorge/Desktop/PROYECTO/pages/productos.html#pasteleria&decoracion">PASTELERÍA
-                            & DECORACÍON</a>
+                        <div>
+                            <img class="main__img" src="./Images/Pasteleria&Decoracion.jpg"
+                                alt="Pastelería & decoracíon" />
+                        </div>
+                        <div class="btn-group">
+                            <a href="./pages/productos.html#pasteleria" class="btn btn-primary main__boton">PASTELERÍA &
+                                DECORACÍON</a>
+                        </div>
                     </div>
                 </div>
-                <div class="col-2 col-md-3">
+                <div class="col-2 col-md-3 main__columnas">
                     <div class="main__div container">
-                        <img class="main__img" src="./Images/Cremas.jpg" alt="Cremas" />
-                        <a class="main__enlace"
-                            href="file:///C:/Users/Jorge/Desktop/PROYECTO/pages/productos.html#cremas">CREMAS</a>
+                        <div>
+                            <img class="main__img" src="./Images/Cremas.jpg" alt="Cremas" />
+                        </div>
+                        <div class="btn-group">
+                            <a href="./pages/productos.html#cremas" class="btn btn-primary main__boton">CREMAS</a>
+                        </div>
                     </div>
                     <div class="main__div container">
-                        <img class="main__img" src="./Images/Mayonesa.jpg" alt="Mayonesas" />
-                        <a class="main__enlace"
-                            href="file:///C:/Users/Jorge/Desktop/PROYECTO/pages/productos.html#mayonesas">MAYONESAS</a>
+                        <div>
+                            <img class="main__img" src="./Images/Mayonesa.jpg" alt="Mayonesas" />
+                        </div>
+                        <div class="btn-group">
+                            <a href="./pages/productos.html#mayonesas" class="btn btn-primary main__boton">MAYONESAS</a>
+                        </div>
                     </div>
                     <div class="main__div margin container">
-                        <img class="main__img" src="./Images/Pulpas&Jaleas.jpg" alt="Pulpas & jaleas" />
-                        <a class="main__enlace"
-                            href="file:///C:/Users/Jorge/Desktop/PROYECTO/pages/productos.html#pulpas&jaleas">PULPAS &
-                            JALEAS</a>
+                        <div>
+                            <img class="main__img" src="./Images/Pulpas&Jaleas.jpg" alt="Pulpas & jaleas" />
+                        </div>
+                        <div class="btn-group">
+                            <a href="./pages/productos.html#pulpas" class="btn btn-primary main__boton">PULPAS &
+                                JALEAS</a>
+                        </div>
                     </div>
                 </div>
-                <div class="col-4 col-md-3 d-flex flex-column bd-highlight main__section3">
+                <div class="col-4 col-md-3 d-flex flex-column bd-highlight main__section3 main__columnas">
                     <div class="main__div container">
-                        <img class="main__img" src="./Images/Esencias.jpg" alt="Esencias" />
-                        <a class="main__enlace"
-                            href="file:///C:/Users/Jorge/Desktop/PROYECTO/pages/productos.html#esencias">ESENCIAS</a>
+                        <div>
+                            <img class="main__img" src="./Images/Esencias.jpg" alt="Esencias" />
+                        </div>
+                        <div class="btn-group">
+                            <a href="./pages/productos.html#esencias" class="btn btn-primary main__boton">ESENCIAS</a>
+                        </div>
                     </div>
                     <div class="main__div container">
-                        <img class="main__img" src="./Images/Mermeladas&Dulces.jpg" alt="Mermeladas & dulces" />
-                        <a class="main__enlace"
-                            href="file:///C:/Users/Jorge/Desktop/PROYECTO/pages/productos.html#mermeladas&dulces">MERMELADAS
-                            & DULCES</a>
+                        <div>
+                            <img class="main__img" src="./Images/Mermeladas&Dulces.jpg" alt="Mermeladas & dulces" />
+                        </div>
+                        <div class="btn-group">
+                            <a href="./pages/productos.html#mermeladas" class="btn btn-primary main__boton">MERMELADAS &
+                                DULCES</a>
+                        </div>
                     </div>
                     <div class="main__div margin container">
-                        <img class="main__img" src="./Images/Semillas&FrutosSecos.jpg" alt="Semillas & frutos secos" />
-                        <a class="main__enlace"
-                            href="file:///C:/Users/Jorge/Desktop/PROYECTO/pages/productos.html#semillas&frutosSecos">SEMILLAS
-                            & FRUTOS SECOS</a>
+                        <div>
+                            <img class="main__img" src="./Images/Semillas&FrutosSecos.jpg"
+                                alt="Semillas & frutos secos" />
+                        </div>
+                        <div class="btn-group">
+                            <a href="./pages/productos.html#semillas" class="btn btn-primary main__boton">SEMILLAS &
+                                FRUTOS SECOS</a>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -165,11 +217,11 @@
     <footer class="footer">
         <div class="container-fluid footer__div">
             <ul class="d-flex flex-row bd-highlight footer__ul">
-                <li><i><a href="" class="fab fa-whatsapp footer__icono"></a></i></li>
+                <li><i><a href="" class="fa-brands fa-whatsapp-square footer__icono"></a></i></li>
                 <li><i><a href="https://www.facebook.com/SEROS-distribuidora-105852644797057"
-                            class="fab fa-facebook-f footer__icono"></a></i></li>
+                            class="fa-brands fa-facebook-square footer__icono"></a></i></li>
             </ul>
-            <p class="footer__parrafo">Copyright</p>
+            <p class="footer__parrafo"> © 2022 | Creado por MABermúdez.</p>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"

@@ -1,4 +1,6 @@
 .mainUbicacion {
+    background-color: $colorBlanco;
+
     .main__div--ubicacion {
         padding-left: 0rem;
         padding-right: 0rem;
@@ -20,3 +22,40 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+    .mainUbicacion {
+        .main__div--ubicacion {
+            .main__section {
+                .main__h1 {
+                    @include estilosTitulosResponsive;
+                }
+            }
+
+            .main__section--ubicacion {
+                .main__inframe {
+                    height: 20rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .mainUbicacion {
+        .main__div--ubicacion {
+            .main__section {
+                .main__h1 {
+                    @include estilosTitulosResponsive2;
+                }
+            }
+
+            .main__section--ubicacion {
+                .main__inframe {
+                    height: 18rem;
+                }
+            }
+        }
+    }
+}
+

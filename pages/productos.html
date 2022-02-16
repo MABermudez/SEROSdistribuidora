@@ -5,15 +5,17 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="keywords" content="Seros, distribuidora, materias primas, productos, azúcar, chocolates, cremas, esencias, grasas">
-  <meta name="description" content="Distribuidora de materias primas para panadería y pastelería. Trabajamos con una amplia variedad de productos. Todo lo que necesitas esta acá."> 
+  <meta name="keywords"
+    content="Seros, distribuidora, materias primas, productos, azúcar, chocolates, cremas, esencias, grasas">
+  <meta name="description"
+    content="Distribuidora de materias primas para panadería y pastelería. Trabajamos con una amplia variedad de productos. Todo lo que necesitas esta acá.">
   <!-- fuentes externas -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
   <!-- favicon -->
   <link rel="shortcut icon" href="../Images/favicon.jpg" />
-  <script src="https://kit.fontawesome.com/8033048fdb.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/885ebc020d.js" crossorigin="anonymous"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" href="../css/style.css">
@@ -23,144 +25,616 @@
 
 <body>
   <header class="header">
-    <div class="container-fluid d-flex flex-row bd-highligh header__div">
-      <img data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" class="img-thumbnail header__img"
-        src="../Images/favicon.jpg" alt="Logo Seros distribuidora" />
-      <nav class="navbar navbar-expand-xl navbar-light header__nav d-flex justify-content-end bd-highlight mb-2">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="../index.html">INICIO</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarWithDropdown"
-            aria-controls="navbarWithDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse show" id="navbarWithDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="./informacion.html">NOSOTROS</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./contacto.html">CONTACTO</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./ubicacion.html">UBICACIÓN</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                  data-bs-toggle="dropdown" aria-expanded="false">
-                  PRODUCTOS
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <li><a class="dropdown-item" href="#">Azúcar</a></li>
-                  <li><a class="dropdown-item" href="#">Chocolates</a></li>
-                  <li><a class="dropdown-item" href="#">Cremas</a></li>
-                  <li><a class="dropdown-item" href="#">Esencias</a></li>
-                  <li><a class="dropdown-item" href="#">Grasas</a></li>
-                  <li><a class="dropdown-item" href="#">Margarinas&Mantecas</a></li>
-                  <li><a class="dropdown-item" href="#">Mayonesas</a></li>
-                  <li><a class="dropdown-item" href="#">Mermeladas&Dulces</a></li>
-                  <li><a class="dropdown-item" href="#">Panificados&Premezclas</a></li>
-                  <li><a class="dropdown-item" href="#">Pastelería&Decoración</a></li>
-                  <li><a class="dropdown-item" href="#">Pulpas&Jaleas</a></li>
-                  <li><a class="dropdown-item" href="#">Semillas&FrutosSecos</a></li>
-                </ul>
-              </li>
-            </ul>
+    <div class="d-flex flex-row bd-highligh header__div">
+      <div class="container-fluid header__container--img">
+        <img class="header__img" src="../Images/favicon.jpg" alt="Logo Seros distribuidora" />
+      </div>
+      <div class="container-fluid header__container--nav">
+        <nav class="navbar navbar-expand-xl navbar-light d-flex bd-highlight mb-2 header__nav">
+          <div class="container-fluid header__container--div">
+            <a class="navbar-brand" href="../index.html">SEROS distribuidora</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarWithDropdown"
+              aria-controls="navbarWithDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="container-fluid collapse navbar-collapse show navbar__div" id="navbarWithDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="./informacion.html">NOSOTROS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./contacto.html">CONTACTO</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./ubicacion.html">UBICACIÓN</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="./productos.html#productos" id="navbarDropdownMenuLink"
+                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    PRODUCTOS
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="./productos.html#azucar">Azúcar</a></li>
+                    <li><a class="dropdown-item" href="./productos.html#chocolates">Chocolates</a>
+                    </li>
+                    <li><a class="dropdown-item" href="./productos.html#cremas">Cremas</a></li>
+                    <li><a class="dropdown-item" href="./productos.html#esencias">Esencias</a>
+                    </li>
+                    <li><a class="dropdown-item" href="./productos.html#grasas">Grasas</a></li>
+                    <li><a class="dropdown-item" href="./productos.html#margarinas">Margarinas & Mantecas</a></li>
+                    <li><a class="dropdown-item" href="./productos.html#mayonesas">Mayonesas</a>
+                    </li>
+                    <li><a class="dropdown-item" href="./productos.html#mermeladas">Mermeladas & Dulces</a></li>
+                    <li><a class="dropdown-item" href="./productos.html#panificados">Panificados & Premezclas</a></li>
+                    <li><a class="dropdown-item" href="./productos.html#pasteleria">Pastelería & Decoración</a></li>
+                    <li><a class="dropdown-item" href="./productos.html#pulpas">Pulpas & Jaleas</a></li>
+                    <li><a class="dropdown-item" href="./productos.html#semillas">Semillas & FrutosSecos</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </div>
   </header>
   <main class="mainProductos">
     <section class="main__section">
       <h1 class="main__h1 h1 display-5 text-center">PRODUCTOS</h1>
     </section>
-
-
-
-    <div class="accordion" id="accordionBasic">
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingOne">
-          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-            aria-expanded="true" aria-controls="collapseOne">
-            AZÚCAR
-          </button>
-        </h2>
-        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-          data-bs-parent="#accordionBasic">
-          <div class="accordion-body">
-            <strong>This is the first item's accordion body.</strong> It is hidden by default, until the collapse plugin
-            adds the appropriate classes that we use to style each element. These classes control the overall
-            appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom
-            CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the
-            <code>.accordion-body</code>, though the transition does limit overflow.
+    <section class="container-fluid main__section2">
+      <div class="accordion" id="accordionBasic">
+        <div class="accordion-item" id="Azucar">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+              aria-expanded="true" aria-controls="collapseOne">
+              AZÚCAR
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+            data-bs-parent="#accordionBasic">
+            <div class="accordion-body div__body">
+              <div class="card div__cards">
+                <img src="https://dummyimage.com/170x170/000/fff" class="card-img-top" alt="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">Azúcar impalpable x 10 kg.</h5>
+                  <p class="card-text">Producto fabricado por HOLRAY.</p>
+                  <p class="card-text"><small class="text-muted">$1300</small></p>
+                </div>
+              </div>
+              <div class="card div__cards">
+                <img src="https://dummyimage.com/170x170/000/fff" class="card-img-top" alt="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">Azúcar negro x 10 kg.</h5>
+                  <p class="card-text">Producto fabricado por DEWEY.</p>
+                  <p class="card-text"><small class="text-muted">$1300</small></p>
+                </div>
+              </div>
+              <div class="card div__cards">
+                <img src="https://dummyimage.com/170x170/000/fff" class="card-img-top" alt="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">Azúcar antihumedad x 5 kg.</h5>
+                  <p class="card-text">Producto fabricado por TAXONERA.</p>
+                  <p class="card-text"><small class="text-muted">$1500</small></p>
+                </div>
+              </div>
+              <div class="card div__cards">
+                <img src="https://dummyimage.com/170x170/000/fff" class="card-img-top" alt="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">Azúcar granulado x 5 kg.</h5>
+                  <p class="card-text">Producto fabricado por TAXONERA.</p>
+                  <p class="card-text"><small class="text-muted">$600</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item" id="chocolates">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+              aria-expanded="true" aria-controls="collapseTwo">
+              CHOCOLATES
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo"
+            data-bs-parent="#accordionBasic">
+            <div class="accordion-body div__body">
+              <div class="card div__cards">
+                <img src="https://dummyimage.com/170x170/000/fff" class="card-img-top" alt="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">Crema sabor chantilly x 4.7 litros.</h5>
+                  <p class="card-text">Producto de origen vegetal fabricado por LEDEVIT.</p>
+                  <p class="card-text"><small class="text-muted">$1300</small></p>
+                </div>
+              </div>
+              <div class="card div__cards">
+                <img src="https://dummyimage.com/170x170/000/fff" class="card-img-top" alt="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">Crema sabor vainilla x 4.7 litros.</h5>
+                  <p class="card-text">Producto de origen vegetal fabricado por LEDEVIT.</p>
+                  <p class="card-text"><small class="text-muted">$1300</small></p>
+                </div>
+              </div>
+              <div class="card div__cards">
+                <img src="https://dummyimage.com/170x170/000/fff" class="card-img-top" alt="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">Crema sabor chocolate x 4.7 litros.</h5>
+                  <p class="card-text">Producto de origen vegetal fabricado por LEDEVIT.</p>
+                  <p class="card-text"><small class="text-muted">$1500</small></p>
+                </div>
+              </div>
+              <div class="card div__cards">
+                <img src="https://dummyimage.com/170x170/000/fff" class="card-img-top" alt="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">Crema sabor chantilly x 1 litro.</h5>
+                  <p class="card-text">Producto de origen vegetal fabricado por DECOR UP.</p>
+                  <p class="card-text"><small class="text-muted">$600</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item" id="cremas">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
+              aria-expanded="true" aria-controls="collapseThree">
+              CREMAS
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse show" aria-labelledby="headingThree"
+            data-bs-parent="#accordionBasic">
+            <div class="accordion-body div__body">
+              <div class="card div__cards">
+                <img src="https://dummyimage.com/170x170/000/fff" class="card-img-top" alt="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">Crema sabor chantilly x 4.7 litros.</h5>
+                  <p class="card-text">Producto de origen vegetal fabricado por LEDEVIT.</p>
+                  <p class="card-text"><small class="text-muted">$1300</small></p>
+                </div>
+              </div>
+              <div class="card div__cards">
+                <img src="https://dummyimage.com/170x170/000/fff" class="card-img-top" alt="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">Crema sabor vainilla x 4.7 litros.</h5>
+                  <p class="card-text">Producto de origen vegetal fabricado por LEDEVIT.</p>
+                  <p class="card-text"><small class="text-muted">$1300</small></p>
+                </div>
+              </div>
+              <div class="card div__cards">
+                <img src="https://dummyimage.com/170x170/000/fff" class="card-img-top" alt="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">Crema sabor chocolate x 4.7 litros.</h5>
+                  <p class="card-text">Producto de origen vegetal fabricado por LEDEVIT.</p>
+                  <p class="card-text"><small class="text-muted">$1500</small></p>
+                </div>
+              </div>
+              <div class="card div__cards">
+                <img src="https://dummyimage.com/170x170/000/fff" class="card-img-top" alt="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">Crema sabor chantilly x 1 litro.</h5>
+                  <p class="card-text">Producto de origen vegetal fabricado por DECOR UP.</p>
+                  <p class="card-text"><small class="text-muted">$600</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item" id="esencias">
+          <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour"
+              aria-expanded="true" aria-controls="collapseFour">
+              ESENCIAS
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse show" aria-labelledby="headingFour"
+            data-bs-parent="#accordionBasic">
+            <div class="accordion-body div__body">
+              <div class="card div__cards">
+                <img src="https://dummyimage.com/170x170/000/fff" class="card-img-top" alt="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">Crema sabor chantilly x 4.7 litros.</h5>
+                  <p class="card-text">Producto de origen vegetal fabricado por LEDEVIT.</p>
+                  <p class="card-text"><small class="text-muted">$1300</small></p>
+                </div>
+              </div>
+              <div class="card div__cards">
+                <img src="https://dummyimage.com/170x170/000/fff" class="card-img-top" alt="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">Crema sabor vainilla x 4.7 litros.</h5>
+                  <p class="card-text">Producto de origen vegetal fabricado por LEDEVIT.</p>
+                  <p class="card-text"><small class="text-muted">$1300</small></p>
+                </div>
+              </div>
+              <div class="card div__cards">
+                <img src="https://dummyimage.com/170x170/000/fff" class="card-img-top" alt="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">Crema sabor chocolate x 4.7 litros.</h5>
+                  <p class="card-text">Producto de origen vegetal fabricado por LEDEVIT.</p>
+                  <p class="card-text"><small class="text-muted">$1500</small></p>
+                </div>
+              </div>
+              <div class="card div__cards">
+                <img src="https://dummyimage.com/170x170/000/fff" class="card-img-top" alt="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">Crema sabor chantilly x 1 litro.</h5>
+                  <p class="card-text">Producto de origen vegetal fabricado por DECOR UP.</p>
+                  <p class="card-text"><small class="text-muted">$600</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item" id="grasas">
+          <h2 class="accordion-header" id="headingFive">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive"
+              aria-expanded="true" aria-controls="collapseFive">
+              GRASAS
+            </button>
+          </h2>
+          <div id="collapseFive" class="accordion-collapse collapse show" aria-labelledby="headingFive"
+            data-bs-parent="#accordionBasic">
+            <div class="accordion-body div__body">
+              <div class="card div__cards">
+                <img src="https://dummyimage.com/170x170/000/fff" class="card-img-top" alt="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">Crema sabor chantilly x 4.7 litros.</h5>
+                  <p class="card-text">Producto de origen vegetal fabricado por LEDEVIT.</p>
+                  <p class="card-text"><small class="text-muted">$1300</small></p>
+                </div>
+              </div>
+              <div class="card div__cards">
+                <img src="https://dummyimage.com/170x170/000/fff" class="card-img-top" alt="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">Crema sabor vainilla x 4.7 litros.</h5>
+                  <p class="card-text">Producto de origen vegetal fabricado por LEDEVIT.</p>
+                  <p class="card-text"><small class="text-muted">$1300</small></p>
+                </div>
+              </div>
+              <div class="card div__cards">
+                <img src="https://dummyimage.com/170x170/000/fff" class="card-img-top" alt="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">Crema sabor chocolate x 4.7 litros.</h5>
+                  <p class="card-text">Producto de origen vegetal fabricado por LEDEVIT.</p>
+                  <p class="card-text"><small class="text-muted">$1500</small></p>
+                </div>
+              </div>
+              <div class="card div__cards">
+                <img src="https://dummyimage.com/170x170/000/fff" class="card-img-top" alt="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">Crema sabor chantilly x 1 litro.</h5>
+                  <p class="card-text">Producto de origen vegetal fabricado por DECOR UP.</p>
+                  <p class="card-text"><small class="text-muted">$600</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item" id="margarinas">
+          <h2 class="accordion-header" id="headingSix">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix"
+              aria-expanded="true" aria-controls="collapseSix">
+              MARGARINAS & MANTECAS
+            </button>
+          </h2>
+          <div id="collapseSix" class="accordion-collapse collapse show" aria-labelledby="headingSix"
+            data-bs-parent="#accordionBasic">
+            <div class="accordion-body div__body">
+              <div class="card div__cards">
+                <img src="https://dummyimage.com/170x170/000/fff" class="card-img-top" alt="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">Crema sabor chantilly x 4.7 litros.</h5>
+                  <p class="card-text">Producto de origen vegetal fabricado por LEDEVIT.</p>
+                  <p class="card-text"><small class="text-muted">$1300</small></p>
+                </div>
+              </div>
+              <div class="card div__cards">
+                <img src="https://dummyimage.com/170x170/000/fff" class="card-img-top" alt="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">Crema sabor vainilla x 4.7 litros.</h5>
+                  <p class="card-text">Producto de origen vegetal fabricado por LEDEVIT.</p>
+                  <p class="card-text"><small class="text-muted">$1300</small></p>
+                </div>
+              </div>
+              <div class="card div__cards">
+                <img src="https://dummyimage.com/170x170/000/fff" class="card-img-top" alt="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">Crema sabor chocolate x 4.7 litros.</h5>
+                  <p class="card-text">Producto de origen vegetal fabricado por LEDEVIT.</p>
+                  <p class="card-text"><small class="text-muted">$1500</small></p>
+                </div>
+              </div>
+              <div class="card div__cards">
+                <img src="https://dummyimage.com/170x170/000/fff" class="card-img-top" alt="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">Crema sabor chantilly x 1 litro.</h5>
+                  <p class="card-text">Producto de origen vegetal fabricado por DECOR UP.</p>
+                  <p class="card-text"><small class="text-muted">$600</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item" id="mayonesas">
+          <h2 class="accordion-header" id="headingSeven">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven"
+              aria-expanded="true" aria-controls="collapseSeven">
+              MAYONESAS
+            </button>
+          </h2>
+          <div id="collapseSeven" class="accordion-collapse collapse show" aria-labelledby="headingSeven"
+            data-bs-parent="#accordionBasic">
+            <div class="accordion-body div__body">
+              <div class="card div__cards">
+                <img src="https://dummyimage.com/170x170/000/fff" class="card-img-top" alt="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">Crema sabor chantilly x 4.7 litros.</h5>
+                  <p class="card-text">Producto de origen vegetal fabricado por LEDEVIT.</p>
+                  <p class="card-text"><small class="text-muted">$1300</small></p>
+                </div>
+              </div>
+              <div class="card div__cards">
+                <img src="https://dummyimage.com/170x170/000/fff" class="card-img-top" alt="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">Crema sabor vainilla x 4.7 litros.</h5>
+                  <p class="card-text">Producto de origen vegetal fabricado por LEDEVIT.</p>
+                  <p class="card-text"><small class="text-muted">$1300</small></p>
+                </div>
+              </div>
+              <div class="card div__cards">
+                <img src="https://dummyimage.com/170x170/000/fff" class="card-img-top" alt="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">Crema sabor chocolate x 4.7 litros.</h5>
+                  <p class="card-text">Producto de origen vegetal fabricado por LEDEVIT.</p>
+                  <p class="card-text"><small class="text-muted">$1500</small></p>
+                </div>
+              </div>
+              <div class="card div__cards">
+                <img src="https://dummyimage.com/170x170/000/fff" class="card-img-top" alt="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">Crema sabor chantilly x 1 litro.</h5>
+                  <p class="card-text">Producto de origen vegetal fabricado por DECOR UP.</p>
+                  <p class="card-text"><small class="text-muted">$600</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item" id="mermeladas">
+          <h2 class="accordion-header" id="headingEight">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight"
+              aria-expanded="true" aria-controls="collapseEight">
+              MERMELADAS & DULCES
+            </button>
+          </h2>
+          <div id="collapseEight" class="accordion-collapse collapse show" aria-labelledby="headingEight"
+            data-bs-parent="#accordionBasic">
+            <div class="accordion-body div__body">
+              <div class="card div__cards">
+                <img src="https://dummyimage.com/170x170/000/fff" class="card-img-top" alt="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">Crema sabor chantilly x 4.7 litros.</h5>
+                  <p class="card-text">Producto de origen vegetal fabricado por LEDEVIT.</p>
+                  <p class="card-text"><small class="text-muted">$1300</small></p>
+                </div>
+              </div>
+              <div class="card div__cards">
+                <img src="https://dummyimage.com/170x170/000/fff" class="card-img-top" alt="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">Crema sabor vainilla x 4.7 litros.</h5>
+                  <p class="card-text">Producto de origen vegetal fabricado por LEDEVIT.</p>
+                  <p class="card-text"><small class="text-muted">$1300</small></p>
+                </div>
+              </div>
+              <div class="card div__cards">
+                <img src="https://dummyimage.com/170x170/000/fff" class="card-img-top" alt="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">Crema sabor chocolate x 4.7 litros.</h5>
+                  <p class="card-text">Producto de origen vegetal fabricado por LEDEVIT.</p>
+                  <p class="card-text"><small class="text-muted">$1500</small></p>
+                </div>
+              </div>
+              <div class="card div__cards">
+                <img src="https://dummyimage.com/170x170/000/fff" class="card-img-top" alt="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">Crema sabor chantilly x 1 litro.</h5>
+                  <p class="card-text">Producto de origen vegetal fabricado por DECOR UP.</p>
+                  <p class="card-text"><small class="text-muted">$600</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item" id="panificados">
+          <h2 class="accordion-header" id="headingNine">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine"
+              aria-expanded="true" aria-controls="collapseNine">
+              PANIFICADOS & PREMEZCLAS
+            </button>
+          </h2>
+          <div id="collapseNine" class="accordion-collapse collapse show" aria-labelledby="headingNine"
+            data-bs-parent="#accordionBasic">
+            <div class="accordion-body div__body">
+              <div class="card div__cards">
+                <img src="https://dummyimage.com/170x170/000/fff" class="card-img-top" alt="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">Crema sabor chantilly x 4.7 litros.</h5>
+                  <p class="card-text">Producto de origen vegetal fabricado por LEDEVIT.</p>
+                  <p class="card-text"><small class="text-muted">$1300</small></p>
+                </div>
+              </div>
+              <div class="card div__cards">
+                <img src="https://dummyimage.com/170x170/000/fff" class="card-img-top" alt="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">Crema sabor vainilla x 4.7 litros.</h5>
+                  <p class="card-text">Producto de origen vegetal fabricado por LEDEVIT.</p>
+                  <p class="card-text"><small class="text-muted">$1300</small></p>
+                </div>
+              </div>
+              <div class="card div__cards">
+                <img src="https://dummyimage.com/170x170/000/fff" class="card-img-top" alt="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">Crema sabor chocolate x 4.7 litros.</h5>
+                  <p class="card-text">Producto de origen vegetal fabricado por LEDEVIT.</p>
+                  <p class="card-text"><small class="text-muted">$1500</small></p>
+                </div>
+              </div>
+              <div class="card div__cards">
+                <img src="https://dummyimage.com/170x170/000/fff" class="card-img-top" alt="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">Crema sabor chantilly x 1 litro.</h5>
+                  <p class="card-text">Producto de origen vegetal fabricado por DECOR UP.</p>
+                  <p class="card-text"><small class="text-muted">$600</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item" id="pasteleria">
+          <h2 class="accordion-header" id="headingTen">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen"
+              aria-expanded="true" aria-controls="collapseTen">
+              PASTELERÍA & DECORACÍON
+            </button>
+          </h2>
+          <div id="collapseTen" class="accordion-collapse collapse show" aria-labelledby="headingTen"
+            data-bs-parent="#accordionBasic">
+            <div class="accordion-body div__body">
+              <div class="card div__cards">
+                <img src="https://dummyimage.com/170x170/000/fff" class="card-img-top" alt="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">Crema sabor chantilly x 4.7 litros.</h5>
+                  <p class="card-text">Producto de origen vegetal fabricado por LEDEVIT.</p>
+                  <p class="card-text"><small class="text-muted">$1300</small></p>
+                </div>
+              </div>
+              <div class="card div__cards">
+                <img src="https://dummyimage.com/170x170/000/fff" class="card-img-top" alt="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">Crema sabor vainilla x 4.7 litros.</h5>
+                  <p class="card-text">Producto de origen vegetal fabricado por LEDEVIT.</p>
+                  <p class="card-text"><small class="text-muted">$1300</small></p>
+                </div>
+              </div>
+              <div class="card div__cards">
+                <img src="https://dummyimage.com/170x170/000/fff" class="card-img-top" alt="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">Crema sabor chocolate x 4.7 litros.</h5>
+                  <p class="card-text">Producto de origen vegetal fabricado por LEDEVIT.</p>
+                  <p class="card-text"><small class="text-muted">$1500</small></p>
+                </div>
+              </div>
+              <div class="card div__cards">
+                <img src="https://dummyimage.com/170x170/000/fff" class="card-img-top" alt="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">Crema sabor chantilly x 1 litro.</h5>
+                  <p class="card-text">Producto de origen vegetal fabricado por DECOR UP.</p>
+                  <p class="card-text"><small class="text-muted">$600</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item" id="pulpas">
+          <h2 class="accordion-header" id="headingEleven">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven"
+              aria-expanded="true" aria-controls="collapseEleven">
+              PULPAS & JALEAS
+            </button>
+          </h2>
+          <div id="collapseEleven" class="accordion-collapse collapse show" aria-labelledby="headingEleven"
+            data-bs-parent="#accordionBasic">
+            <div class="accordion-body div__body">
+              <div class="card div__cards">
+                <img src="https://dummyimage.com/170x170/000/fff" class="card-img-top" alt="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">Crema sabor chantilly x 4.7 litros.</h5>
+                  <p class="card-text">Producto de origen vegetal fabricado por LEDEVIT.</p>
+                  <p class="card-text"><small class="text-muted">$1300</small></p>
+                </div>
+              </div>
+              <div class="card div__cards">
+                <img src="https://dummyimage.com/170x170/000/fff" class="card-img-top" alt="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">Crema sabor vainilla x 4.7 litros.</h5>
+                  <p class="card-text">Producto de origen vegetal fabricado por LEDEVIT.</p>
+                  <p class="card-text"><small class="text-muted">$1300</small></p>
+                </div>
+              </div>
+              <div class="card div__cards">
+                <img src="https://dummyimage.com/170x170/000/fff" class="card-img-top" alt="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">Crema sabor chocolate x 4.7 litros.</h5>
+                  <p class="card-text">Producto de origen vegetal fabricado por LEDEVIT.</p>
+                  <p class="card-text"><small class="text-muted">$1500</small></p>
+                </div>
+              </div>
+              <div class="card div__cards">
+                <img src="https://dummyimage.com/170x170/000/fff" class="card-img-top" alt="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">Crema sabor chantilly x 1 litro.</h5>
+                  <p class="card-text">Producto de origen vegetal fabricado por DECOR UP.</p>
+                  <p class="card-text"><small class="text-muted">$600</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item" id="semillas">
+          <h2 class="accordion-header" id="headingTwelve">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwelve"
+              aria-expanded="true" aria-controls="collapseTwelve">
+              SEMILLAS & FRUTOS SECOS
+            </button>
+          </h2>
+          <div id="collapseTwelve" class="accordion-collapse collapse show" aria-labelledby="headingTwelve"
+            data-bs-parent="#accordionBasic">
+            <div class="accordion-body div__body">
+              <div class="card div__cards">
+                <img src="https://dummyimage.com/170x170/000/fff" class="card-img-top" alt="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">Crema sabor chantilly x 4.7 litros.</h5>
+                  <p class="card-text">Producto de origen vegetal fabricado por LEDEVIT.</p>
+                  <p class="card-text"><small class="text-muted">$1300</small></p>
+                </div>
+              </div>
+              <div class="card div__cards">
+                <img src="https://dummyimage.com/170x170/000/fff" class="card-img-top" alt="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">Crema sabor vainilla x 4.7 litros.</h5>
+                  <p class="card-text">Producto de origen vegetal fabricado por LEDEVIT.</p>
+                  <p class="card-text"><small class="text-muted">$1300</small></p>
+                </div>
+              </div>
+              <div class="card div__cards">
+                <img src="https://dummyimage.com/170x170/000/fff" class="card-img-top" alt="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">Crema sabor chocolate x 4.7 litros.</h5>
+                  <p class="card-text">Producto de origen vegetal fabricado por LEDEVIT.</p>
+                  <p class="card-text"><small class="text-muted">$1500</small></p>
+                </div>
+              </div>
+              <div class="card div__cards">
+                <img src="https://dummyimage.com/170x170/000/fff" class="card-img-top" alt="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">Crema sabor chantilly x 1 litro.</h5>
+                  <p class="card-text">Producto de origen vegetal fabricado por DECOR UP.</p>
+                  <p class="card-text"><small class="text-muted">$600</small></p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingTwo">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-            CHOCOLATES
-          </button>
-        </h2>
-        <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo"
-          data-bs-parent="#accordionBasic">
-          <div class="accordion-body">
-            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse
-            plugin adds the appropriate classes that we use to style each element. These classes control the overall
-            appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom
-            CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the
-            <code>.accordion-body</code>, though the transition does limit overflow.
-          </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingThree">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-            CREMAS
-          </button>
-        </h2>
-        <div id="collapseThree" class="accordion-collapse collapse show" aria-labelledby="headingThree"
-          data-bs-parent="#accordionBasic">
-          <div class="accordion-body">
-            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin
-            adds the appropriate classes that we use to style each element. These classes control the overall
-            appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom
-            CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the
-            <code>.accordion-body</code>, though the transition does limit overflow.
-          </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingFour">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-            ESENCIAS
-          </button>
-        </h2>
-        <div id="collapseFour" class="accordion-collapse collapse show" aria-labelledby="headingFour"
-          data-bs-parent="#accordionBasic">
-          <div class="accordion-body">
-            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin
-            adds the appropriate classes that we use to style each element. These classes control the overall
-            appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom
-            CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the
-            <code>.accordion-body</code>, though the transition does limit overflow.
-          </div>
-        </div>
-      </div>
-
-
+    </section>
   </main>
   <footer class="footer">
     <div class="container-fluid footer__div">
       <ul class="d-flex flex-row bd-highlight footer__ul">
-        <li><i><a href="" class="fab fa-whatsapp footer__icono"></a></i></li>
+        <li><i><a href="" class="fa-brands fa-whatsapp-square footer__icono"></a></i></li>
         <li><i><a href="https://www.facebook.com/SEROS-distribuidora-105852644797057"
-              class="fab fa-facebook-f footer__icono"></a></i></li>
+              class="fa-brands fa-facebook-square footer__icono"></a></i></li>
       </ul>
-      <p class="footer__parrafo">Copyright</p>
+      <p class="footer__parrafo"> © 2022 | Creado por MABermúdez.</p>
     </div>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"

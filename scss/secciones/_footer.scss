@@ -14,10 +14,7 @@
                 transition-property: all;
 
                 .footer__icono {
-                    font-size: 2rem;
-                    text-decoration: none;
-                    color: $colorBlanco;
-                    padding-right: 1.2rem;
+                    @include estilosIconos;
                 }
 
                 &:hover {

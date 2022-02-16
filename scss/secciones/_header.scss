@@ -4,29 +4,193 @@
     .header__div,
     .d-flex {
         justify-content: space-around;
+        margin-right: 1rem;
+        margin-left: 1rem;
 
         .header__img {
             display: inline-block;
-            width: 100px;
-            height: 100px;
-            margin: 10px 0px;
+            width: 6rem;
+            height: 6rem;
+            margin: 1rem 0px;
             border-radius: 85%;
         }
 
-        .header__nav {
-            font-size: 1.3em;
+        .header__container--nav {
+            padding-right: 0rem;
+            padding-left: 0rem;
 
-            .navbar-brand,
-            .nav-link {
-                color: $colorBlanco;
+            .header__nav {
+                .header__container--div {
+                    justify-content: flex-end;
+                    margin-top: 2rem;
+
+                    .navbar-brand,
+                    .nav-link {
+                        color: $colorBlanco;
+                        font-size: 1.3rem;
+                        padding-right: 0.5rem;
+                        padding-left: 0.5rem;
+                        margin-right: 0rem;
+
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+
+                    .navbar-toggler {
+                        background-color: $colorBlanco;
+                        color: rgba(217, 217, 217, 0.5);
+                    }
+
+                    .navbar__div {
+                        .navbar-nav {
+                            flex-direction: row;
+
+                            .nav-item {
+                                .dropdown-menu {
+                                    background-color: $colorGris;
+
+                                    .dropdown-item {
+                                        color: $colorBlanco;
+                                        background-color: $colorGris;
+                                    }
+
+                                    &:hover {
+                                        background-color: $colorGris;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+    .header {
+
+        .header__div,
+        .d-flex {
+            margin-right: 1rem;
+
+
+            .header__container--img {
+                padding-left: 0rem;
+                padding-right: 0rem;
+                margin-top: 1rem;
+
+                .header__img {
+                    width: 5rem;
+                    height: 5rem;
+                }
             }
 
-            .nav-item {
-                .dropdown-menu {
-                    background-color: $colorGris;
+            .header__container--nav {
+                margin-right: 1rem;
+                padding-left: 0rem;
+                padding-right: 0rem;
 
-                    .dropdown-item {
-                        color: $colorBlanco;
+                .header__nav {
+                    margin-left: 0rem;
+
+                    .header__container--div {
+                        justify-content: flex-end;
+                        padding-right: 0rem;
+                        padding-left: 0rem;
+
+                        .navbar-brand {
+                            padding-left: 0rem;
+                            margin-right: 0rem;
+                            padding-right: 0.2rem;
+                            font-size: 1.2rem;
+                        }
+
+                        .navbar__div {
+                            padding-left: 0rem;
+
+                            .navbar-nav {
+                                flex-direction: row;
+                                font-size: 1.1rem;
+
+                                .nav-item {
+                                    padding-right: 0.5rem;
+
+                                    .nav-link {
+                                        font-size: 1.1rem;
+                                        padding-right: 0rem;
+                                        padding-left: 0rem;
+
+                                    }
+
+                                    .dropdown-menu {
+                                        position: absolute;
+
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .header {
+
+        .header__div,
+        .d-flex {
+            margin-left: 2rem;
+            margin-right: 1rem;
+
+            .header__container--img {
+                padding-right: 0.1rem;
+
+                .header__img {
+                    width: 5rem;
+                    height: 5rem;
+                    margin-top: 0.1rem;
+                }
+            }
+
+            .header__container--nav {
+                width: 25rem;
+
+                .header__nav {
+
+                    .header__container--div {
+                        padding-right: 0.5rem;
+                        padding-left: 0.1rem;
+
+                        .navbar-brand {
+                            font-size: 1rem;
+                        }
+
+                        .navbar__div {
+                            .navbar-nav {
+                                font-size: 1rem;
+
+                                .nav-item {
+                                    padding-right: 0.5rem;
+
+                                    .nav-link {
+                                        font-size: 1rem;
+                                    }
+
+                                    .dropdown-menu {
+                                        left: -1rem;
+
+                                        .dropdown-item {
+                                            font-size: 0.75rem;
+                                        }
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
             }

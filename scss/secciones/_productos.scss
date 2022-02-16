@@ -1,1 +1,127 @@
-.mainProductos {}
+.mainProductos {
+    background-color: $colorBlanco;
+
+    .main__section {
+        .main__h1 {
+            @extend %estilosTitulo;
+        }
+    }
+
+    .main__section2 {
+        padding-bottom: 2rem;
+
+        .accordion-item {
+            border: 1px solid black;
+            max-width: 70rem;
+            margin: auto;
+
+            .accordion-button {
+                background-color: rgba(217, 217, 217, 0.5);
+                padding: 1rem 5rem;
+            }
+
+            .accordion-button:not(.collapsed) {
+                background-color: rgba(217, 217, 217, 0.5);
+                color: black;
+            }
+
+            .div__body {
+                display: flex;
+                justify-content: center;
+                background-color: rgba(217, 217, 217, 0.5);
+                padding: 1.5rem 0rem;
+
+                .div__cards {
+                    width: 12rem;
+                    margin-right: 1rem;
+
+                    .card-body {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        background-color: $colorBlanco;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .mainProductos {
+        .main__section {
+            .main__h1 {
+                @include estilosTitulosResponsive;
+            }
+        }
+
+        .main__section2 {
+            .accordion-item {
+                .accordion-button {}
+
+                .accordion-button:not(.collapsed) {}
+
+                .div__body {
+                    .div__cards {
+                        width: 10rem;
+
+                        .card-body {
+                            padding: 0.5rem 1rem;
+                            align-items: flex-start;
+
+                            .card-title {
+                                font-size: 0.9rem;
+                            }
+
+                            .card-text {
+                                font-size: 0.7rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .mainProductos {
+        .main__section {
+            .main__h1 {
+                @include estilosTitulosResponsive2;
+            }
+        }
+
+        .main__section2 {
+            .accordion-item {
+                .accordion-button {}
+
+                .accordion-button:not(.collapsed) {}
+
+                .div__body {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    flex-wrap: wrap;
+
+                    .div__cards {
+                        width: 10rem;
+
+                        .card-body {
+                            padding: 0.5rem 1rem;
+                            align-items: flex-start;
+
+                            .card-title {
+                                font-size: 0.8rem;
+                            }
+
+                            .card-text {
+                                font-size: 0.6rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
