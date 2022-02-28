@@ -3,7 +3,7 @@ $colorBlanco: #d9d9d9;
 $colorGris: #353535;
 
 // EXTEND
-%estilosTitulo{
+%estilosTitulo {
     color: black;
     padding: 1.3em 0em;
     margin-bottom: 0em;
@@ -25,7 +25,5 @@ $colorGris: #353535;
 
 @mixin estilosTitulosResponsive2 {
     padding: 2.5rem 0rem;
-    font-size: 2rem;   
+    font-size: 1.8rem;
 }
-
-

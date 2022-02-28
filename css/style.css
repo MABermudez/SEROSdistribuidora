@@ -124,22 +124,33 @@ body {
     margin-right: 1rem; }
     .header .header__div .header__container--img,
     .header .d-flex .header__container--img {
-      padding-right: 0.1rem; }
+      padding-right: 0.1rem;
+      margin-top: 0.7rem; }
       .header .header__div .header__container--img .header__img,
       .header .d-flex .header__container--img .header__img {
-        width: 5rem;
-        height: 5rem;
-        margin-top: 0.1rem; }
+        width: 4rem;
+        height: 4rem;
+        margin-top: 0.1rem;
+        position: absolute; }
     .header .header__div .header__container--nav,
     .header .d-flex .header__container--nav {
-      width: 25rem; }
+      width: 25rem;
+      margin-right: 0rem;
+      margin-bottom: 0.5rem; }
       .header .header__div .header__container--nav .header__nav .header__container--div,
       .header .d-flex .header__container--nav .header__nav .header__container--div {
-        padding-right: 0.5rem;
-        padding-left: 0.1rem; }
+        padding-right: 0rem;
+        padding-left: 0.1rem;
+        width: 20rem;
+        margin-top: 1.5rem; }
         .header .header__div .header__container--nav .header__nav .header__container--div .navbar-brand,
         .header .d-flex .header__container--nav .header__nav .header__container--div .navbar-brand {
-          font-size: 1rem; }
+          font-size: 0.9rem;
+          margin-right: 0.5rem; }
+        .header .header__div .header__container--nav .header__nav .header__container--div .navbar-toggler,
+        .header .d-flex .header__container--nav .header__nav .header__container--div .navbar-toggler {
+          padding: 0.25rem 0.6rem;
+          font-size: 1.1rem; }
         .header .header__div .header__container--nav .header__nav .header__container--div .navbar__div .navbar-nav,
         .header .d-flex .header__container--nav .header__nav .header__container--div .navbar__div .navbar-nav {
           font-size: 1rem; }
@@ -148,10 +159,11 @@ body {
             padding-right: 0.5rem; }
             .header .header__div .header__container--nav .header__nav .header__container--div .navbar__div .navbar-nav .nav-item .nav-link,
             .header .d-flex .header__container--nav .header__nav .header__container--div .navbar__div .navbar-nav .nav-item .nav-link {
-              font-size: 1rem; }
+              font-size: 0.8rem;
+              margin-top: 0.2rem; }
             .header .header__div .header__container--nav .header__nav .header__container--div .navbar__div .navbar-nav .nav-item .dropdown-menu,
             .header .d-flex .header__container--nav .header__nav .header__container--div .navbar__div .navbar-nav .nav-item .dropdown-menu {
-              left: -1rem; }
+              left: -4rem; }
               .header .header__div .header__container--nav .header__nav .header__container--div .navbar__div .navbar-nav .nav-item .dropdown-menu .dropdown-item,
               .header .d-flex .header__container--nav .header__nav .header__container--div .navbar__div .navbar-nav .nav-item .dropdown-menu .dropdown-item {
                 font-size: 0.75rem; } }
@@ -172,7 +184,8 @@ body {
     font-size: 55px;
     position: absolute;
     left: 20px;
-    background-color: rgba(217, 217, 217, 0.3);
+    color: #d9d9d9;
+    background-color: rgba(53, 53, 53, 0.8);
     letter-spacing: 0px;
     word-spacing: 10px;
     line-height: 70px;
@@ -200,7 +213,9 @@ body {
       .mainIndex .main__section1 .main__div .btn-group .main__boton,
       .mainIndex .main__section1 .main__div .btn-group-vertical .main__boton {
         width: 10rem;
-        height: 3.5rem; }
+        height: 3.5rem;
+        background-color: #353535;
+        border-color: #d9d9d9; }
 
 @media (max-width: 768px) {
   .header .header__div2 .header__imgen {
@@ -237,23 +252,19 @@ body {
             font-size: 0.8rem; } }
 
 @media (max-width: 576px) {
-  .header .header__div2 .header__imgen {
-    height: 25em; }
   .header .header__div2 .header__h2 {
-    height: 15rem;
-    width: 25rem;
-    font-size: 2.5rem;
-    word-spacing: 0.5rem;
-    line-height: 3.5rem;
-    text-align: center;
-    padding: 2rem; }
+    width: 20rem;
+    font-size: 2rem; }
   .mainIndex .main__contenedor .main__section .main__h1 {
     padding: 2.5rem 0rem;
-    font-size: 2rem; }
-  .mainIndex .main__contenedor .main__section1 .margin {
-    margin-bottom: 0rem; }
-  .mainIndex .main__contenedor .main__section1 .main__columnas {
-    width: 50%; } }
+    font-size: 1.8rem; }
+  .mainIndex .main__contenedor .main__section1 {
+    margin-left: 0rem;
+    margin-right: 0rem; }
+    .mainIndex .main__contenedor .main__section1 .margin {
+      margin-bottom: 0rem; }
+    .mainIndex .main__contenedor .main__section1 .main__columnas {
+      width: 50%; } }
 
 .mainInformacion {
   background-color: #d9d9d9; }
@@ -268,7 +279,7 @@ body {
     .mainInformacion .main__section--info2 .main__div--info {
       background-color: #fff;
       width: 50rem;
-      height: 9rem;
+      height: 8rem;
       border-radius: 0.75rem;
       margin-bottom: 0.5rem; }
       .mainInformacion .main__section--info2 .main__div--info .main__p {
@@ -276,6 +287,9 @@ body {
         text-align: justify;
         padding: 1rem 1rem;
         text-align-last: center; }
+      .mainInformacion .main__section--info2 .main__div--info .main__span {
+        font-size: 1.2rem;
+        font-weight: bolder; }
 
 @media (max-width: 768px) {
   .mainInformacion .main__section .main__h1 {
@@ -300,17 +314,24 @@ body {
 @media (max-width: 576px) {
   .mainInformacion .main__section .main__h1 {
     padding: 2.5rem 0rem;
-    font-size: 2rem; }
+    font-size: 1.8rem; }
   .mainInformacion .main__section--info1 {
     width: 30rem; }
     .mainInformacion .main__section--info1 .main__h3 {
-      font-size: 1.2rem; }
+      font-size: 1.2rem;
+      width: 25rem;
+      text-align: center; }
     .mainInformacion .main__section--info1 .main__h5 {
-      font-size: 1rem; }
+      font-size: 1rem;
+      width: 25rem;
+      text-align: center; }
   .mainInformacion .main__section--info2 {
     max-width: 90%; }
     .mainInformacion .main__section--info2 .main__div--info .main__p {
-      font-size: 0.9rem; } }
+      font-size: 0.8rem;
+      text-align: justify; }
+    .mainInformacion .main__section--info2 .main__div--info .main__span {
+      font-size: 1rem; } }
 
 .mainContacto {
   background-color: #d9d9d9; }
@@ -347,11 +368,11 @@ body {
 @media (max-width: 576px) {
   .mainContacto .main__section .main__h1 {
     padding: 2.5rem 0rem;
-    font-size: 2rem; }
+    font-size: 1.8rem; }
   .mainContacto .main__section .main__form .main__div--contacto {
-    width: 30rem; }
+    width: 25rem; }
     .mainContacto .main__section .main__form .main__div--contacto .main__enviar {
-      width: 30rem; } }
+      width: 25rem; } }
 
 .mainProductos {
   background-color: #d9d9d9; }
@@ -398,21 +419,25 @@ body {
 @media (max-width: 576px) {
   .mainProductos .main__section .main__h1 {
     padding: 2.5rem 0rem;
-    font-size: 2rem; }
+    font-size: 1.8rem; }
+  .mainProductos .main__section2 .accordion-item .accordion-button {
+    font-size: 0.9rem; }
   .mainProductos .main__section2 .accordion-item .div__body {
     display: flex;
     flex-direction: row;
     align-items: center;
     flex-wrap: wrap; }
     .mainProductos .main__section2 .accordion-item .div__body .div__cards {
-      width: 10rem; }
-      .mainProductos .main__section2 .accordion-item .div__body .div__cards .card-body {
-        padding: 0.5rem 1rem;
-        align-items: flex-start; }
-        .mainProductos .main__section2 .accordion-item .div__body .div__cards .card-body .card-title {
-          font-size: 0.8rem; }
-        .mainProductos .main__section2 .accordion-item .div__body .div__cards .card-body .card-text {
-          font-size: 0.6rem; } }
+      width: 9rem;
+      height: 18rem;
+      margin-right: 0.5rem; }
+    .mainProductos .main__section2 .accordion-item .div__body .card-body {
+      padding: 0.5rem 1rem;
+      align-items: flex-start; }
+      .mainProductos .main__section2 .accordion-item .div__body .card-body .card-title {
+        font-size: 0.8rem; }
+      .mainProductos .main__section2 .accordion-item .div__body .card-body .card-text {
+        font-size: 0.6rem; } }
 
 .mainUbicacion {
   background-color: #d9d9d9; }
@@ -436,7 +461,7 @@ body {
 @media (max-width: 576px) {
   .mainUbicacion .main__div--ubicacion .main__section .main__h1 {
     padding: 2.5rem 0rem;
-    font-size: 2rem; }
+    font-size: 1.8rem; }
   .mainUbicacion .main__div--ubicacion .main__section--ubicacion .main__inframe {
     height: 18rem; } }
 

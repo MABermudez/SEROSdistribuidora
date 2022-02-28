@@ -94,7 +94,9 @@
 
         .main__section2 {
             .accordion-item {
-                .accordion-button {}
+                .accordion-button {
+                    font-size: 0.9rem;
+                }
 
                 .accordion-button:not(.collapsed) {}
 
@@ -105,19 +107,21 @@
                     flex-wrap: wrap;
 
                     .div__cards {
-                        width: 10rem;
+                        width: 9rem;
+                        height: 18rem;
+                        margin-right: 0.5rem;
+                    }
 
-                        .card-body {
-                            padding: 0.5rem 1rem;
-                            align-items: flex-start;
+                    .card-body {
+                        padding: 0.5rem 1rem;
+                        align-items: flex-start;
 
-                            .card-title {
-                                font-size: 0.8rem;
-                            }
+                        .card-title {
+                            font-size: 0.8rem;
+                        }
 
-                            .card-text {
-                                font-size: 0.6rem;
-                            }
+                        .card-text {
+                            font-size: 0.6rem;
                         }
                     }
                 }

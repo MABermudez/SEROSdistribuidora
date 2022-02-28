@@ -18,7 +18,8 @@
             font-size: 55px;
             position: absolute;
             left: 20px;
-            background-color: rgba(217, 217, 217, 0.3);
+            color: $colorBlanco;
+            background-color: rgba(53, 53, 53, 0.8);
             letter-spacing: 0px;
             word-spacing: 10px;
             line-height: 70px;
@@ -38,8 +39,6 @@
     }
 
     .main__section1 {
-        // margin-left: 15rem;
-        // margin-right: 15rem;
 
         .margin {
             margin-bottom: 5rem;
@@ -68,23 +67,11 @@
                 .main__boton {
                     width: 10rem;
                     height: 3.5rem;
+                    background-color: $colorGris;
+                    border-color: $colorBlanco;
                 }
             }
         }
-
-        //     .main__enlace:hover {
-        //         cursor: pointer;
-        //         animation: productos 1.1s;
-        //     }
-
-        //     @keyframes productos {
-        //         50% {
-        //             font-size: 17px;
-        //             width: 180px;
-        //             height: 65px;
-        //         }
-        //     }
-        // }
     }
 }
 
@@ -98,12 +85,12 @@
             }
 
             .header__h2 {
-                 height: 15rem;
-                 width: 25rem;
-                 font-size: 2.5rem;
-                 word-spacing: 0.5rem;
-                 line-height: 3rem;
-                 padding: 3rem 2rem;
+                height: 15rem;
+                width: 25rem;
+                font-size: 2.5rem;
+                word-spacing: 0.5rem;
+                line-height: 3rem;
+                padding: 3rem 2rem;
             }
 
         }
@@ -121,7 +108,7 @@
 
             .main__section1 {
                 margin-left: 5rem;
-    margin-right: 5rem;
+                margin-right: 5rem;
 
                 .main__columnas {
                     width: 50%;
@@ -134,11 +121,11 @@
 
                     .main__div {
                         justify-content: center;
-    
+
                         .main__img {
                             width: 10rem;
                         }
-    
+
                         .btn-group,
                         .btn-group-vertical {
                             .main__boton {
@@ -158,19 +145,9 @@
     .header {
         .header__div2 {
 
-
-            .header__imgen {
-                height: 25em;
-            }
-
             .header__h2 {
-                height: 15rem;
-                width: 25rem;
-                font-size: 2.5rem;
-                word-spacing: 0.5rem;
-                line-height: 3.5rem;
-                text-align: center;
-                padding: 2rem;
+                width: 20rem;
+                font-size: 2rem;
             }
 
         }
@@ -186,6 +163,9 @@
             }
 
             .main__section1 {
+                margin-left: 0rem;
+                margin-right: 0rem;
+
                 .margin {
                     margin-bottom: 0rem;
                 }
