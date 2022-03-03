@@ -180,17 +180,15 @@ body {
     width: 100%; }
   .header .header__div2 .header__h2 {
     height: 400px;
-    width: 500px;
-    font-size: 55px;
+    width: 35rem;
+    font-size: 4rem;
     position: absolute;
-    left: 20px;
-    color: #d9d9d9;
-    background-color: rgba(53, 53, 53, 0.8);
+    left: 2rem;
     letter-spacing: 0px;
-    word-spacing: 10px;
-    line-height: 70px;
+    line-height: 5rem;
     font-weight: normal;
-    padding: 100px 40px; }
+    padding: 100px 40px;
+    background-color: rgba(40, 75, 99, 0.9); }
 
 .mainIndex {
   background-color: #d9d9d9; }
@@ -252,9 +250,14 @@ body {
             font-size: 0.8rem; } }
 
 @media (max-width: 576px) {
+  .header .header__div2 .header__imgen {
+    height: 15em; }
   .header .header__div2 .header__h2 {
     width: 20rem;
-    font-size: 2rem; }
+    height: 12rem;
+    font-size: 2rem;
+    padding: 2rem 1rem;
+    line-height: 2.5rem; }
   .mainIndex .main__contenedor .main__section .main__h1 {
     padding: 2.5rem 0rem;
     font-size: 1.8rem; }
@@ -316,14 +319,13 @@ body {
     padding: 2.5rem 0rem;
     font-size: 1.8rem; }
   .mainInformacion .main__section--info1 {
-    width: 30rem; }
+    max-width: 100%; }
     .mainInformacion .main__section--info1 .main__h3 {
       font-size: 1.2rem;
-      width: 25rem;
-      text-align: center; }
+      max-width: 100%; }
     .mainInformacion .main__section--info1 .main__h5 {
-      font-size: 1rem;
-      width: 25rem;
+      font-size: 0.9rem;
+      max-width: 100%;
       text-align: center; }
   .mainInformacion .main__section--info2 {
     max-width: 90%; }
@@ -370,9 +372,9 @@ body {
     padding: 2.5rem 0rem;
     font-size: 1.8rem; }
   .mainContacto .main__section .main__form .main__div--contacto {
-    width: 25rem; }
+    max-width: 100%; }
     .mainContacto .main__section .main__form .main__div--contacto .main__enviar {
-      width: 25rem; } }
+      max-width: 100%; } }
 
 .mainProductos {
   background-color: #d9d9d9; }

@@ -14,17 +14,15 @@
 
         .header__h2 {
             height: 400px;
-            width: 500px;
-            font-size: 55px;
+            width: 35rem;
+            font-size: 4rem;
             position: absolute;
-            left: 20px;
-            color: $colorBlanco;
-            background-color: rgba(53, 53, 53, 0.8);
+            left: 2rem;
             letter-spacing: 0px;
-            word-spacing: 10px;
-            line-height: 70px;
+            line-height: 5rem;
             font-weight: normal;
             padding: 100px 40px;
+            background-color: rgba(40, 75, 99, 0.9);
         }
     }
 }
@@ -144,10 +142,16 @@
 @media (max-width: 576px) {
     .header {
         .header__div2 {
+            .header__imgen {
+                height: 15em;
+            }
 
             .header__h2 {
                 width: 20rem;
+                height: 12rem;
                 font-size: 2rem;
+                padding: 2rem 1rem;
+                line-height: 2.5rem;
             }
 
         }
